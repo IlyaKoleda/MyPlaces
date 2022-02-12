@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--My Places-->
         <scene sceneID="IVt-iG-S0J">
             <objects>
                 <tableViewController id="bCu-2k-9gm" customClass="MainTableViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                             <outlet property="delegate" destination="bCu-2k-9gm" id="VsA-22-mo5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="EFG-rG-cqO"/>
+                    <navigationItem key="navigationItem" title="My Places" id="EFG-rG-cqO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7x-ES-R4G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,6 +44,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nDf-U5-86u">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="24"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="bCu-2k-9gm" kind="relationship" relationship="rootViewController" id="pCV-iQ-Zia"/>
